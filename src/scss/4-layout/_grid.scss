@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 15px;
+
+  &__item {
+    width: auto;
+  }
+
+
+  //  --- *** Column Variations *** --- //
+
+  &.col-2 {
+    grid-template-columns: 1fr;
+    @include screen('desktopAll') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.col-4 {
+    grid-template-columns: 1fr;
+
+    @include screen('tablet') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include screen('desktopAll') {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  }
+
+  &.col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
