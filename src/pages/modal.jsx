@@ -13,50 +13,102 @@ const ModalPage = () => (
         <div className={'modal'}>
 
             <div className={'modal__content'}>
-
-                <div className={'modal__content__header'}>
-
-                    <div className={'grid col-3'}>
-                        <div className={'grid__item'}>
-                            <h4>£32,000</h4>
-                            <p>Current Bid</p>
+                <header>
+                    <div className={'modal__content__stats'}>
+                        <div className={'grid col-3'}>
+                            <div className={'grid__item'}>
+                                <h4>£32,000</h4>
+                                <p>Current Bid</p>
+                            </div>
+                            <div className={'grid__item'}>
+                                <h4>04:30:10</h4>
+                                <p>Today: 7:00pm</p>
+                            </div>
+                            <div className={'grid__item'}>
+                                <h4>23</h4>
+                                <p>Bids</p>
+                            </div>
                         </div>
-                        <div className={'grid__item'}>
-                            <h4>04:30:10</h4>
-                            <p>Today: 7:00pm</p>
+                    </div>
+
+                    <div className={'modal__content__summary'}>
+                        <div className={'grid col-2'}>
+                            <div className={'grid__item preview-image'}>
+                                <img
+                                    src={'https://images.collectingcars.com/010021/DSC08928.jpg?fit=fillmax&auto=format,compress&cs=srgb&q=85'}
+                                    alt={'Image preview'}
+                                />
+                            </div>
+                            <div className={'grid__item'}>
+                                <h3>2018 MERCEDES-AMG GT C</h3>
+                                <div className={'summary__lozenge'}/>
+                                <div className={'summary__lozenge'}/>
+
+                            </div>
                         </div>
-                        <div className={'grid__item'}>
-                            <h4>23</h4>
-                            <p>Bids</p>
+                    </div>
+
+                </header>
+
+                <div className={'modal__content__container'}>
+                    <div className={'modal__content__container__inner'}>
+                        {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aut, exercitationem*/}
+                        {/*    illum impedit ipsum iste nam nisi placeat quia, repellendus sed sint temporibus veniam vitae.*/}
+                        {/*    Culpa*/}
+                        {/*    explicabo similique ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est*/}
+                        {/*    expedita incidunt necessitatibus nemo officia pariatur quaerat quidem quisquam, sint sunt ullam*/}
+                        {/*    vel voluptate voluptates voluptatibus. Ipsa officiis quisquam veritatis? Lorem ipsum dolor sit*/}
+                        {/*    amet, consectetur adipisicing elit. Dignissimos, dolore fuga magnam minima obcaecati odit*/}
+                        {/*    placeat quos reprehenderit. Aspernatur dolore id magni maxime nulla provident quia quod saepe*/}
+                        {/*    sunt voluptatem!</p>*/}
+                        <div className={'modal__content__bid-history'}>
+                            <h3>BID HISTORY</h3>
+                            <div className={'bid-history__item'}>
+                                <h3>£64,000</h3>
+                                <p>CJBeales</p>
+                                <small>18 Hours ago</small>
+                            </div>
+                            <div className={'bid-history__item'}>
+                                <h3>£60,000</h3>
+                                <p>JDP</p>
+                                <small>21 Hours ago</small>
+                            </div>
+                            <div className={'bid-history__item'}>
+                                <h3>£59,500</h3>
+                                <p>CJBeales</p>
+                                <small>23 Hours ago</small>
+                            </div>
+                            <div className={'bid-history__item'}>
+                                <h3>£64,000</h3>
+                                <p>CJBeales</p>
+                                <small>18 Hours ago</small>
+                            </div>
+                            <div className={'bid-history__item'}>
+                                <h3>£60,000</h3>
+                                <p>JDP</p>
+                                <small>21 Hours ago</small>
+                            </div>
+                            <div className={'bid-history__item'}>
+                                <h3>£59,500</h3>
+                                <p>CJBeales</p>
+                                <small>23 Hours ago</small>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-
-                <div className={'modal__content__container'}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aut, exercitationem
-                        illum impedit ipsum iste nam nisi placeat quia, repellendus sed sint temporibus veniam vitae.
-                        Culpa
-                        explicabo similique ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est
-                        expedita incidunt necessitatibus nemo officia pariatur quaerat quidem quisquam, sint sunt ullam
-                        vel voluptate voluptates voluptatibus. Ipsa officiis quisquam veritatis? Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit. Dignissimos, dolore fuga magnam minima obcaecati odit
-                        placeat quos reprehenderit. Aspernatur dolore id magni maxime nulla provident quia quod saepe
-                        sunt voluptatem!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aut, exercitationem
-                        illum impedit ipsum iste nam nisi placeat quia, repellendus sed sint temporibus veniam vitae.
-                        Culpa
-                        explicabo similique ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est
-                        expedita incidunt necessitatibus nemo officia pariatur quaerat quidem quisquam, sint sunt ullam
-                        vel voluptate voluptates voluptatibus. Ipsa officiis quisquam veritatis? Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit. Dignissimos, dolore fuga magnam minima obcaecati odit
-                        placeat quos reprehenderit. Aspernatur dolore id magni maxime nulla provident quia quod saepe
-                        sunt voluptatem!</p>
-                </div>
-
             </div>
             <div className={'modal__cta'}>
-                <button>Button</button>
+                <div className={'modal__cta__content'}>
+                    <div className={'grid col-2'}>
+                        <div className={'grid__item'}>
+                            <a className={'button button-primary'}>Place Live Bid</a>
+                        </div>
+                        <div className={'grid__item'}>
+                            <a className={'button button-secondary'}>Place Max Bid</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
