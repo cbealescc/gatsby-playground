@@ -14,15 +14,36 @@
 
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
   z-index: 3000;
+
+  @include screen('tablet-and-desktop') {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+  }
+
+  &__top-bar {
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background: #0d2638;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    transform: none;
+  }
 
   //Content section
   &__content {
-    background: white;
+    //background: white;
     border-radius: 20px 20px 0 0;
     position: relative;
 
@@ -32,6 +53,7 @@
 
     header {
       padding: 20px;
+      background: white;
 
       h4, p {
         margin: 0;
@@ -87,10 +109,15 @@
     //Main content container
     &__container {
       overflow: auto;
-      max-height: 50vh;
+      max-height: 90vh;
+      background: white;
+
+      @include screen('tablet-and-desktop') {
+        max-height: 65vh;
+      }
 
       &__inner {
-        padding: 20px 20px 70px 20px;
+        padding: 20px;
       }
     }
 
@@ -114,7 +141,7 @@
     position: relative;
     display: block;
     background: white;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 5px 5px;
 
     //To remove the top border
     &:before {
@@ -134,12 +161,29 @@
       left: 0;
       width: 100%;
       height: 70px;
-      background: rgb(255,255,255);
-      background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8155637254901961) 35%, rgba(255,255,255,0) 100%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8155637254901961) 35%, rgba(255, 255, 255, 0) 100%);
     }
 
     &__content {
       padding: 20px;
     }
   }
+
+
+  //  *** --- Bidding Popup Panel --- *** //
+
+  &.bidding-panel-modal {
+    .modal__content__container {
+      max-height: 25vh;
+      @include screen('tablet-and-desktop') {
+        max-height: 35vh;
+      }
+    }
+
+    .modal__content__container__inner {
+      padding: 20px 20px 70px 20px;
+    }
+  }
+
 }

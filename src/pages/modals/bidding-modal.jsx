@@ -1,18 +1,23 @@
 import * as React from "react"
 import {Link} from "gatsby"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 
-const ModalPage = () => (
+const BiddingModalPage = () => (
     <Layout>
         <Seo title="Grid Page"/>
 
         <div className={'modal-overlay'} id={'modalOverlay'}/>
 
-        <div className={'modal'}>
+        <div className={'modal bidding-panel-modal'}>
 
             <div className={'modal__content'}>
+
+                <div className={'modal__top-bar'}>
+                    <p>Top bar here</p>
+                </div>
+
                 <header>
                     <div className={'modal__content__stats'}>
                         <div className={'grid col-3'}>
@@ -117,4 +122,4 @@ const ModalPage = () => (
     </Layout>
 )
 
-export default ModalPage;
+export default BiddingModalPage;
