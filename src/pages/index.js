@@ -23,7 +23,7 @@ const IndexPage = () => (
         />
         <p>
             <Link to="/grid/">Go to grid page</Link> <br/>
-            <Link to="/modals/">Go to Modal page</Link> <br/>
+            {/*<Link to="/modals/">Go to Modal page</Link> <br/>*/}
             <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br/>
             <Link to="/using-ssr">Go to "Using SSR"</Link> <br/>
             <Link to="/using-dsg">Go to "Using DSG"</Link>
