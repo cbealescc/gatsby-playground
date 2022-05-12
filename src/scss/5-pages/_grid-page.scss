@@ -1,0 +1,14 @@
+.grid-page {
+  .grid {
+    margin: 50px 0;
+
+    &__item {
+      background: rebeccapurple;
+      height: 200px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

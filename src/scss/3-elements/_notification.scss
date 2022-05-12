@@ -1,0 +1,54 @@
+.alert-box {
+  display: block;
+  margin: 15px 0;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__icon {
+    margin: 0 20px 0 0;
+
+    //If using SVG icon
+    img {
+      height: 27px;
+    }
+
+    //If using Fontawesome Icon
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &__content {
+    p {
+      margin: 0;
+    }
+  }
+
+  //Styles
+
+  //Red
+  &.danger {
+    background: rgba(#913036, .2);
+    border-color: #913036;
+    i {
+      color: #913036;
+    }
+  }
+
+  //Yellow
+  &.warning {
+
+  }
+
+  //Green
+  &.success {
+
+  }
+}
