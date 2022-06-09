@@ -6,7 +6,7 @@ import Seo from "../../components/seo"
 
 const BiddingModalPage = () => (
     <Layout>
-        <Seo title="Grid Page"/>
+        <Seo title="Bidding Modal"/>
 
         <div className={'modal-overlay'} id={'modalOverlay'}/>
 
@@ -41,7 +41,7 @@ const BiddingModalPage = () => (
                             <div className={'grid__item preview-image'}>
                                 <img
                                     src={'https://images.collectingcars.com/010021/DSC08928.jpg?fit=fillmax&auto=format,compress&cs=srgb&q=85'}
-                                    alt={'Image preview'}
+                                    alt={'Preview'}
                                 />
                             </div>
                             <div className={'grid__item'}>
@@ -57,15 +57,6 @@ const BiddingModalPage = () => (
 
                 <div className={'modal__content__container'}>
                     <div className={'modal__content__container__inner'}>
-                        {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aut, exercitationem*/}
-                        {/*    illum impedit ipsum iste nam nisi placeat quia, repellendus sed sint temporibus veniam vitae.*/}
-                        {/*    Culpa*/}
-                        {/*    explicabo similique ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est*/}
-                        {/*    expedita incidunt necessitatibus nemo officia pariatur quaerat quidem quisquam, sint sunt ullam*/}
-                        {/*    vel voluptate voluptates voluptatibus. Ipsa officiis quisquam veritatis? Lorem ipsum dolor sit*/}
-                        {/*    amet, consectetur adipisicing elit. Dignissimos, dolore fuga magnam minima obcaecati odit*/}
-                        {/*    placeat quos reprehenderit. Aspernatur dolore id magni maxime nulla provident quia quod saepe*/}
-                        {/*    sunt voluptatem!</p>*/}
                         <div className={'modal__content__bid-history'}>
                             <h3>BID HISTORY</h3>
                             <div className={'bid-history__item'}>
