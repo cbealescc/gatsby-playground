@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import "../scss/site.scss";
-import Carousel from "../components/carousel/carousel";
+import Swiper from "../components/carousels/Swiper";
 
 const IndexPage = () => (
     <Layout>
