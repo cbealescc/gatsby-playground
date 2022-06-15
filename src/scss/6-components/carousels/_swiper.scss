@@ -1,0 +1,11 @@
+.swiper-wrapper {
+  height: 600px;
+}
+
+.swiper-slide {
+  background: lightskyblue;
+
+  &:nth-child(even) {
+    background: lightcoral;
+  }
+}

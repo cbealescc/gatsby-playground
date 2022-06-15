@@ -6,7 +6,7 @@ import Seo from "../../components/seo"
 
 const BiddingModalPage = () => (
     <Layout>
-        <Seo title="Grid Page"/>
+        <Seo title="Bidding Modal"/>
 
         <div className={'modal-overlay'} id={'modalOverlay'}/>
 
@@ -41,7 +41,11 @@ const BiddingModalPage = () => (
                             <div className={'grid__item preview-image'}>
                                 <img
                                     src={'https://images.collectingcars.com/010021/DSC08928.jpg?fit=fillmax&auto=format,compress&cs=srgb&q=85'}
+<<<<<<< HEAD
                                     alt={'preview'}
+=======
+                                    alt={'Preview'}
+>>>>>>> carousels
                                 />
                             </div>
                             <div className={'grid__item'}>
