@@ -34,18 +34,14 @@ const BiddingModalPage = () => (
                                 <p>Bids</p>
                             </div>
                         </div>
-                    </div>
+                    </div> 
 
                     <div className={'modal__content__summary'}>
                         <div className={'grid col-2'}>
                             <div className={'grid__item preview-image'}>
                                 <img
                                     src={'https://images.collectingcars.com/010021/DSC08928.jpg?fit=fillmax&auto=format,compress&cs=srgb&q=85'}
-<<<<<<< HEAD
-                                    alt={'preview'}
-=======
                                     alt={'Preview'}
->>>>>>> carousels
                                 />
                             </div>
                             <div className={'grid__item'}>
