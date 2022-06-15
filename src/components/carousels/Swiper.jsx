@@ -1,9 +1,9 @@
 import * as React from "react"
 
-const Carousel = () => (
+const Swiper = () => (
    <div>
        Carousel here
    </div>
 )
 
-export default Carousel
+export default Swiper
