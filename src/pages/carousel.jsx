@@ -7,10 +7,17 @@ import Swiper from "../components/carousels/Swiper";
 
 
 const CarouselPage = () => (
-    <Layout>
-        <Seo title="Home"/>
-        <Swiper />
-    </Layout>
+    <>
+
+        <Layout>
+            <Seo title="Home" />
+        </Layout>
+
+
+        <div className="container swiper-container">
+            <Swiper />
+        </div>
+    </>
 )
 
 export default CarouselPage

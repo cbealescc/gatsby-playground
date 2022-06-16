@@ -1,9 +1,15 @@
-.swiper-wrapper {
-  height: 600px;
+.swiper-container {
+  .swiper-wrapper {
+    height: 600px;
+  }
 }
 
 .swiper-slide {
-  background: lightskyblue;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 
   &:nth-child(even) {
     background: lightcoral;
