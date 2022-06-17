@@ -1,4 +1,5 @@
 .button {
+  width: fit-content;
   padding: 1em 2em;
   color: white;
   text-transform: uppercase;
@@ -7,6 +8,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
 
   &.button-primary {
     background: #913036;

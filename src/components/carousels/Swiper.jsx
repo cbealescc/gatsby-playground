@@ -60,7 +60,13 @@ const Slides = () => {
             // }}
             spaceBetween={50}
             slidesPerView={1}
-            pagination={{clickable: true}}
+            pagination={{
+                clickable: true,
+                horizontalClass: 'swiper-bullet__wrapper',
+                bulletElement: 'div',
+                bulletClass: 'swiper-bullet',
+                bulletActiveClass: 'swiper-bullet--active'
+            }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
@@ -74,6 +80,15 @@ const Slides = () => {
                                     <source src={item.videoUrlWEBM} type="video/webm"/>
                                     Your browser does not support videos.
                                 </video>
+                                <div className={'container'}>
+                                    <div className={'container__wrapper'}>
+                                        <div className={'slide-content'}>
+                                            <h3>{item.title}</h3>
+                                            <p>{item.previewText}</p>
+                                            <a className={'button button-primary'} href={item.link}>{item.buttonText}</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </SwiperSlide>
                         )
                     } else {
@@ -90,6 +105,7 @@ const Slides = () => {
                                         <div className={'slide-content'}>
                                             <h3>{item.title}</h3>
                                             <p>{item.previewText}</p>
+                                            <a className={'button button-primary'} href={item.link}>{item.buttonText}</a>
                                         </div>
                                     </div>
                                 </div>
