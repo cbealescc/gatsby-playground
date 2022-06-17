@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 // Import Swiper React components
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -30,9 +30,7 @@ const Slides = () => {
         setIsUltraWide(window.innerWidth > 2000);
     }
 
-    const settings = {
 
-    }
 
     return (
 
