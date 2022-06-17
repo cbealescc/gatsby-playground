@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 
 // import Swiper core and required modules
-import { Pagination } from 'swiper';
+import {Pagination} from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,24 +12,30 @@ import 'swiper/css/pagination';
 
 
 const Slides = () => {
-    const baseUrl = 'https://image.shutterstock.com/shutterstock/photos/'
-
-    const images = [
-        `${baseUrl}1923184661/display_1500/stock-photo-kharkiv-ukraine-september-audi-rs-sportback-at-beautiful-sunset-1923184661.jpg`,
-        `${baseUrl}1334183546/display_1500/stock-photo-ashgabad-turkmenistan-blue-sports-car-bmw-m-on-a-winding-mountain-road-1334183546.jpg`,
-        `${baseUrl}1995199103/display_1500/stock-photo-aachen-germany-march-arranged-street-shot-of-an-modern-porsche-gt-rs-1995199103.jpg`
-    ]
+    const baseUrl = 'https://collectingcars.imgix.net/'
 
     const responsiveImages = [
         {
-            imgDesktop: `${baseUrl}1923184661/display_1500/stock-photo-kharkiv-ukraine-september-audi-rs-sportback-at-beautiful-sunset-1923184661.jpg`,
-            imgMobile: `${baseUrl}1901132377/display_1500/stock-photo-side-view-of-woman-sitting-on-sofa-at-home-using-mobile-application-on-cellphone-chatting-on-1901132377.jpg`,
-            imgAlt: `${baseUrl}1804289950/display_1500/stock-photo--d-rendering-of-billboards-and-advertisement-signs-at-modern-buildings-in-capital-city-with-light-1804289950.jpg`
+            type: 'image',
+            imgUltraWide: `${baseUrl}012042/IMG-3569.jpg`,
+            imgDesktop: `${baseUrl}012042/30-ww-16.jpg`,
+            imgMobile: `${baseUrl}012042/IMG-3590.jpg`
         },
         {
-            imgDesktop: `${baseUrl}2000612981/display_1500/stock-photo-photorealistic-d-illustration-of-the-futuristic-city-in-the-style-of-cyberpunk-girl-in-a-2000612981.jpg`,
-            imgMobile: `${baseUrl}1949691562/display_1500/stock-photo-wadi-disah-also-known-as-wadi-qaraqir-is-a-kilometer-long-canyon-running-through-the-jebel-1949691562.jpg`,
-            imgAlt: `${baseUrl}1842774100/display_1500/stock-photo-wild-camping-in-the-lofoten-islands-camping-tent-among-mountains-sunset-over-camping-spot-behind-1842774100.jpg`
+            type: 'image',
+            imgUltraWide: `${baseUrl}012080/MMP-49.jpg`,
+            imgDesktop: `${baseUrl}012080/MMP-1.jpg`,
+            imgMobile: `${baseUrl}012080/MMP-66.jpg`
+        },
+        // {
+        //     type: 'video',
+        //     videoUrlMP4: `https://images-collectingcars-com.s3.eu-west-2.amazonaws.com/editorial/videos/cc-best-offer-explained.mp4`,
+        //     videoUrlWEBM: `https://images-collectingcars-com.s3.eu-west-2.amazonaws.com/editorial/videos/cc-best-offer-explained.mp4`
+        // },
+        {
+            type: 'video',
+            videoUrlMP4: `https://ak.picdn.net/shutterstock/videos/1062622186/preview/stock-footage-aerial-shot-of-electrical-car-driving-on-country-road-at-summer-evening-new-suv-vehicle-moving.mp4`,
+            videoUrlWEBM: `https://ak.picdn.net/shutterstock/videos/1062622186/preview/stock-footage-aerial-shot-of-electrical-car-driving-on-country-road-at-summer-evening-new-suv-vehicle-moving.webm`
         }
     ];
 
@@ -38,22 +44,37 @@ const Slides = () => {
             modules={[Pagination]}
             spaceBetween={50}
             slidesPerView={1}
-            pagination={{ clickable: true }}
+            pagination={{clickable: true}}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
 
-            {responsiveImages.map((item, i) => (
-                <SwiperSlide key={i}>
-
-                    <picture>
-                        <source media="(min-width: 900px)" srcset={item.imgDesktop} />
-                        <source media="(min-width: 480px)" srcset={item.imgMobile} />
-                        <img src={item.imgAlt} alt="IfItDoesntMatchAnyMedia" />
-                    </picture>
-
-                </SwiperSlide>
-            ))}
+            {responsiveImages.map((item, i) => {
+                    if (item.type === 'video') {
+                        return (
+                            <SwiperSlide key={i}>
+                                <video controls={false} autoPlay={true} muted={true} loop={true}>
+                                    <source src={item.videoUrlMP4} type="video/mp4"/>
+                                    <source src={item.videoUrlWEBM} type="video/webm"/>
+                                    Your browser does not support videos.
+                                </video>
+                            </SwiperSlide>
+                        )
+                    } else {
+                        return (
+                            <SwiperSlide key={i}>
+                                <picture>
+                                    <source media="(min-width: 2000px)" srcset={item.imgUltraWide}/>
+                                    <source media="(min-width: 900px)" srcset={item.imgDesktop}/>
+                                    <source media="(min-width: 480px)" srcset={item.imgMobile}/>
+                                    <img src={item.imgAlt} alt="IfItDoesntMatchAnyMedia"/>
+                                </picture>
+                            </SwiperSlide>
+                        )
+                    }
+                }
+            )
+            }
 
         </Swiper>
     );
@@ -62,10 +83,9 @@ const Slides = () => {
 const SwiperCarousel = () => (
     <>
         <p>Swiper.js</p>
-        <Slides />
+        <Slides/>
     </>
 )
-
 
 
 export default SwiperCarousel
