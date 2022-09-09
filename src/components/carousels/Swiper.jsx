@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,12 +13,6 @@ import 'swiper/css/pagination';
 
 const Slides = () => {
     const baseUrl = 'https://image.shutterstock.com/shutterstock/photos/'
-
-    const images = [
-        `${baseUrl}1923184661/display_1500/stock-photo-kharkiv-ukraine-september-audi-rs-sportback-at-beautiful-sunset-1923184661.jpg`,
-        `${baseUrl}1334183546/display_1500/stock-photo-ashgabad-turkmenistan-blue-sports-car-bmw-m-on-a-winding-mountain-road-1334183546.jpg`,
-        `${baseUrl}1995199103/display_1500/stock-photo-aachen-germany-march-arranged-street-shot-of-an-modern-porsche-gt-rs-1995199103.jpg`
-    ]
 
     const responsiveImages = [
         {

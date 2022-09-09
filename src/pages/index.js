@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import "../scss/site.scss";
-import Swiper from "../components/carousels/Swiper";
 
 const IndexPage = () => (
     <Layout>
@@ -24,7 +23,7 @@ const IndexPage = () => (
         />
         <p>
             <Link to="/grid/">Go to grid page</Link> <br/>
-            {/*<Link to="/modals/">Go to Modal page</Link> <br/>*/}
+            <Link to="/modals/">Go to Modal page</Link> <br/>
 
             <Link to="/carousel">Go to Carousel page</Link> <br/>
 

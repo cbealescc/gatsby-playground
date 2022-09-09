@@ -34,7 +34,7 @@ const BiddingModalPage = () => (
                                 <p>Bids</p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
 
                     <div className={'modal__content__summary'}>
                         <div className={'grid col-2'}>
@@ -98,16 +98,15 @@ const BiddingModalPage = () => (
                 <div className={'modal__cta__content'}>
                     <div className={'grid col-2'}>
                         <div className={'grid__item'}>
-                            <a className={'button button-primary'}>Place Live Bid</a>
+                            <a className={'button button-primary'} href="/"> Place Live Bid</a>
                         </div>
                         <div className={'grid__item'}>
-                            <a className={'button button-secondary'}>Place Max Bid</a>
+                            <a className={'button button-secondary'} href="/">Place Max Bid</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <Link to="/">Go back to the homepage</Link>
     </Layout>
