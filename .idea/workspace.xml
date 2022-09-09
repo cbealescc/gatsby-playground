@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e9cc93f9-d2b6-4fcd-80c7-a0a5c02da86e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/carousels/Swiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/carousels/Swiper.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/modals/bidding-modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/modals/bidding-modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/modals/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/modals/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/site.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/site.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,6 +58,7 @@
       <recent name="$PROJECT_DIR$/src/pages/modals" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/experiments" />
       <recent name="$PROJECT_DIR$/src/pages/modals" />
       <recent name="$PROJECT_DIR$/src/scss/1-helpers" />
       <recent name="$PROJECT_DIR$/src/scss" />
@@ -96,7 +95,7 @@
       <workItem from="1652017125148" duration="416000" />
       <workItem from="1652083609546" duration="28000" />
       <workItem from="1652363841398" duration="141000" />
-      <workItem from="1662730200444" duration="252000" />
+      <workItem from="1662730200444" duration="7457000" />
     </task>
     <servers />
   </component>

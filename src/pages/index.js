@@ -24,9 +24,8 @@ const IndexPage = () => (
         <p>
             <Link to="/grid/">Go to grid page</Link> <br/>
             <Link to="/modals/">Go to Modal page</Link> <br/>
-
             <Link to="/carousel">Go to Carousel page</Link> <br/>
-
+            <Link to="/experiments">Go to Experiments page</Link> <br/>
             <Link to="/using-dsg">Go to "Using DSG"</Link>
         </p>
 
