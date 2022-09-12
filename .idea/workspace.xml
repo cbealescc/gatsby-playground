@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e9cc93f9-d2b6-4fcd-80c7-a0a5c02da86e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/site.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/site.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/experiments/carsData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/experiments/carsData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/experiments/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/experiments/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/connorbeales/Documents/other-projects/react-training/gatsby-playground",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/connorbeales/Documents/other-projects/react-training/gatsby-playground&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/modals" />
@@ -95,7 +95,8 @@
       <workItem from="1652017125148" duration="416000" />
       <workItem from="1652083609546" duration="28000" />
       <workItem from="1652363841398" duration="141000" />
-      <workItem from="1662730200444" duration="7457000" />
+      <workItem from="1662730200444" duration="7679000" />
+      <workItem from="1662971333104" duration="4763000" />
     </task>
     <servers />
   </component>
