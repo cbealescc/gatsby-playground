@@ -1,15 +1,15 @@
-import React, {useState, useEffect} from "react"
+import React, {useEffect} from "react"
 import {carStats} from "./carsData";
 
 const carMakes = carStats.map(val => val.make);
 
-let {...carDataList} = carStats;
+// let {...carDataList} = carStats;
 
 // Returns only cars with make of 'Audi'
 // let audiOnly = carStats.filter(car => car.make === "Audi");
 
 function CarsList() {
-    const [vehicleList, setVehicleList] = useState([carStats]);
+    // const [vehicleList, setVehicleList] = useState([carStats]);
 
     useEffect(() => {
         setActive();
@@ -43,7 +43,7 @@ function CarsList() {
         })
     }
 
-    let objectValues = Object.values(carStats);
+    // let objectValues = Object.values(carStats);
 
 
     return (
@@ -51,28 +51,28 @@ function CarsList() {
 
             <ul>
                 {/*{*/}
-                {/*    carStats.map((item, i) => (*/}
-                {/*       return(item)*/}
+                {/*    carStats.map((item, i) => {*/}
+                {/*    return <li key={i}>{item}</li>*/}
                 {/*    ));*/}
                 {/*}*/}
 
-                    </ul>
+            </ul>
 
-                    <button
-                    onClick={(e) => filterResults(e)}
-                    id={'BMW'}
-                    >
-                    BMW Stats
-                    </button>
+            <button
+                onClick={(e) => filterResults(e)}
+                id={'BMW'}
+            >
+                BMW Stats
+            </button>
 
-                    <button
-                    onClick={(e) => filterResults(e)}
-                    id={'Audi'}
-                    >
-                    Audi Stats
-                    </button>
-                    </>
-                    )
-                }
+            <button
+                onClick={(e) => filterResults(e)}
+                id={'Audi'}
+            >
+                Audi Stats
+            </button>
+        </>
+    )
+}
 
-                export default CarsList;
+export default CarsList;

@@ -6,7 +6,7 @@ import Seo from "../../components/seo"
 import CarsList from "./CarList";
 
 
-function ExperimentsPage() {
+function StaticObjects() {
     return (
         <Layout>
             <Seo title="JS Experiments Page"/>
@@ -40,4 +40,4 @@ function ExperimentsPage() {
     )
 }
 
-export default ExperimentsPage;
+export default StaticObjects;
