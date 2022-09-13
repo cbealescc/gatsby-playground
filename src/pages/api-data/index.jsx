@@ -12,35 +12,24 @@ function ApiDataPage() {
 
     useEffect(() => {
 
-        fetch(`https://api.artic.edu/api/v1/artworks`)
-            // If response is bad, log error message. Otherwise, return the data.
-            .then((response) => {
+        const getData = async () => {
+            try {
+                const response = await fetch(`https://api.artic.edu/api/v1/artworks`);
                 if (!response.ok) {
-                    throw new Error(
-                        `This is an HTTP error: The status is ${response.status}`
-                    );
+                    throw new Error(`This is an HTTP error: The status is ${response.status}`);
                 }
-                return response.json();
-            })
-
-            // If successful, set the 'state' data to the json formatted version called 'actualData'.
-            // If that all works, setError state to null
-            .then((actualData) => {
+                let actualData = await response.json();
                 setData(actualData);
                 setError(null);
-            })
-
-            // If there are any errors, catch them. Then setError state to the returned error message.
-            // If the above occurs, seData in state to null
-            .catch((err) => {
+            } catch (err) {
                 setError(err.message);
                 setData(null);
-            })
+            } finally {
+                setLoading(false)
+            }
+        }
+        getData();
 
-            // Once all that has happened, setLoading in state to false.
-            .finally(() => {
-                setLoading(false);
-            });
     }, []);
 
 
