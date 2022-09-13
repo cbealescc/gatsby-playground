@@ -49,7 +49,7 @@ function ApiDataPage() {
         <Layout>
             <Seo title="API Data"/>
 
-            {loading && <div>A moment please...</div>}
+            {loading && <div>Loading...</div>}
 
             {error && (
                 <div>{`There is a problem fetching the post data - ${error}`}</div>
