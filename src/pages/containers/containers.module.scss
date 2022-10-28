@@ -1,0 +1,62 @@
+@import '../../scss/1-helpers/media-queries';
+
+.wrapper {
+  text-align: center;
+  margin: 100px auto;
+
+  h3 {
+    margin: 0 auto 12px auto;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @include screen('tablet') {
+    padding: 0 32px;
+  }
+  @include screen('desktopAll') {
+    padding: 0 16px;
+  }
+
+  // Images
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--full-bleed {
+    @extend .container;
+    max-width: 100%;
+    height: 500px;
+  }
+
+  &--ultraWide {
+    @extend .container;
+    max-width: 1440px;
+  }
+
+  &--small {
+    @extend .container;
+    max-width: 1200px;
+  }
+
+  &--narrow_imgs {
+    @extend .container;
+    max-width: 960px;
+  }
+
+  &--narrow_copy {
+    @extend .container;
+    max-width: 800px;
+  }
+
+}
+
+.content {
+  background: #eee;
+}
